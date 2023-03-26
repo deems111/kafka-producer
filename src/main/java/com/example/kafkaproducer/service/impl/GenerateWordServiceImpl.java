@@ -46,6 +46,9 @@ public class GenerateWordServiceImpl implements GenerateWordService, Initializin
         log.debug("End   of Delay on Generating Word, time = " + new Date().getTime());
     }
 
+    /**
+     * Only for logging
+     */
     @Override
     public void afterPropertiesSet() {
         log.info("Properties of word generation word length = {}, delay ms = {} use numbers = {}, use letters = {}",
